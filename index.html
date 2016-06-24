@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Epi</title>
+		<base href='.'>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="./css/epitracker.css">
+		<link rel="stylesheet" href="http://fonts.useso.com/icon?family=Material+Icons">
+		<link rel="stylesheet" type="text/css" href="./css/flaticon/flaticon.css">
+
+		<!-- 1. Load libraries -->
+		<script src="node_modules/es6-shim/es6-shim.js"></script>
+		<script src="node_modules/zone.js/dist/zone.js"></script>
+		<script src="node_modules/reflect-metadata/Reflect.js"></script>
+		<script src="node_modules/systemjs/dist/system.src.js"></script>
+		<script src="node_modules/typescript/lib/typescript.js"></script>
+
+		<!-- 2. Configure SystemJS -->
+		<script src="systemjs.config.js"></script>
+		<script>
+			System.import('app').catch(function(err){ console.error(err);  });
+		</script>
+		
+	</head>
+
+	<!-- 3. Display the application -->
+	<body class="container-fluid">
+		<epitracker><div style="width: 100%; height: 300px; line-height: 300px; text-align:center; color:#DDDDDD; font-size: 32px;">Loading...</div></epitracker>
+	</body>
+</html>
