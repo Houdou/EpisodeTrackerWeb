@@ -31,7 +31,7 @@ System.register(['@angular/core', '@angular/router', '@osw/tabs/tabs', '@osw/sty
                 function EpiMain() {
                     this.tabs = [
                         new tabs_1.Tab('flaticon-note', 'List', 'list'),
-                        new tabs_1.Tab('flaticon-home', 'Home', 'home'),
+                        new tabs_1.Tab('flaticon-home', 'Home', 'home', true),
                         new tabs_1.Tab('flaticon-settings', 'Settings', 'settings')
                     ];
                 }

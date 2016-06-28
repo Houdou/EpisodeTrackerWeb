@@ -4,12 +4,8 @@
 }
 body {
 	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-.nav-tab-wrapper {
-	display: inline-block;
-	width: 100%;
-	background-color: #EEE;
-}
-.nav-tab {
-	width: auto;
+	position: relative;
+	height: 100%;
+
+	background-color: #EFEFF4;
 }

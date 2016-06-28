@@ -17,10 +17,12 @@ System.register(['@angular/platform-browser-dynamic', './epi.main', './epi.route
                 http_1 = http_1_1;
             }],
         execute: function() {
+            // enableProdMode();
             platform_browser_dynamic_1.bootstrap(epi_main_1.EpiMain, [
                 http_1.HTTP_PROVIDERS,
                 epi_routes_1.EPI_ROUTER_PROVIDERS
             ]);
+            FastClick.attach(document.body);
         }
     }
 });

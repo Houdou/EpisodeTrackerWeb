@@ -21,7 +21,7 @@ System.register(['@angular/router', './list/epi.list.component', './home/epi.hom
             exports_1("routes", routes = [
                 { path: '', redirectTo: '/home', terminal: true },
                 { path: 'list', component: epi_list_component_1.EpiListComponent },
-                { path: 'home', component: epi_home_component_1.EpiHomeComponent },
+                { path: 'home', component: epi_home_component_1.EpiHomeComponent, terminal: true },
                 { path: 'settings', component: epi_settings_component_1.EpiSettingsComponent }
             ]);
             exports_1("EPI_ROUTER_PROVIDERS", EPI_ROUTER_PROVIDERS = [

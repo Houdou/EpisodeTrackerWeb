@@ -47,7 +47,9 @@
   });
 
   var oswPkg = [
+      'lib',
       'tabs',
+      'table',
   ];
 
   oswPkg.forEach(function(pkgName) {

@@ -18,12 +18,12 @@ import { OSW_STYLES } from '@osw/styles.ts';
 	]
 })
 export class EpiMain {
-	tabs: Tab[];
+	public tabs: Tab[];
 
 	constructor() {
 		this.tabs = [
 			new Tab('flaticon-note', 'List', 'list'),
-			new Tab('flaticon-home', 'Home', 'home'),
+			new Tab('flaticon-home', 'Home', 'home', true),
 			new Tab('flaticon-settings', 'Settings', 'settings')
 		]
 	}

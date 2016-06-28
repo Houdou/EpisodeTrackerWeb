@@ -7,7 +7,7 @@ import { EpiSettingsComponent } from './settings/epi.settings.component';
 export const routes: RouterConfig = [
 	{ path: '', redirectTo: '/home', terminal: true },
 	{ path: 'list', component: EpiListComponent },
-	{ path: 'home', component: EpiHomeComponent },
+	{ path: 'home', component: EpiHomeComponent, terminal: true },
 	{ path: 'settings', component: EpiSettingsComponent }
 ];
 
