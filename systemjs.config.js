@@ -6,7 +6,7 @@
  */
 (function(global) {
 
-  var ngVer = '@2.0.0-rc.3'; // lock in the angular package version; do not let it float to current!
+  var ngVer = '@2.0.0-rc.4'; // lock in the angular package version; do not let it float to current!
 
   //map tells the System loader where to look for things
   var  map = {
@@ -48,6 +48,8 @@
 
   var oswPkg = [
       'lib',
+      'scroll',
+      'navigation',
       'tabs',
       'table',
   ];
@@ -78,7 +80,7 @@
     packages[pkgName] = { main: 'index.js', defaultExtension: 'js' };
   });
 
-  map['@angular/router'] = 'https://npmcdn.com/@angular/router@3.0.0-alpha.7';
+  map['@angular/router'] = 'https://npmcdn.com/@angular/router@3.0.0-beta.2';
   packages['@angular/router'] = { main: 'index.js', defaultExtension: 'js' };
 
   var config = {

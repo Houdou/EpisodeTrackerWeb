@@ -1,11 +1,20 @@
-System.register(['@angular/platform-browser-dynamic', './epi.main', './epi.routes', '@angular/http'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/platform-browser-dynamic', '@angular/platform-browser', '@osw/lib/lib', './epi.main', './epi.routes', '@angular/http'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    var platform_browser_dynamic_1, epi_main_1, epi_routes_1, http_1;
+    var core_1, platform_browser_dynamic_1, platform_browser_1, lib_1, epi_main_1, epi_routes_1, http_1;
     return {
         setters:[
+            function (core_1_1) {
+                core_1 = core_1_1;
+            },
             function (platform_browser_dynamic_1_1) {
                 platform_browser_dynamic_1 = platform_browser_dynamic_1_1;
+            },
+            function (platform_browser_1_1) {
+                platform_browser_1 = platform_browser_1_1;
+            },
+            function (lib_1_1) {
+                lib_1 = lib_1_1;
             },
             function (epi_main_1_1) {
                 epi_main_1 = epi_main_1_1;
@@ -20,7 +29,8 @@ System.register(['@angular/platform-browser-dynamic', './epi.main', './epi.route
             // enableProdMode();
             platform_browser_dynamic_1.bootstrap(epi_main_1.EpiMain, [
                 http_1.HTTP_PROVIDERS,
-                epi_routes_1.EPI_ROUTER_PROVIDERS
+                epi_routes_1.EPI_ROUTER_PROVIDERS,
+                core_1.provide(platform_browser_1.HAMMER_GESTURE_CONFIG, { useClass: lib_1.OSWGestureConfig })
             ]);
             FastClick.attach(document.body);
         }

@@ -42,7 +42,7 @@ System.register(['@angular/core', '@angular/router', '@osw/tabs/tabs', '@osw/sty
                             tabs_1.OSW_TABS_DIRECTIVES,
                             router_1.ROUTER_DIRECTIVES
                         ],
-                        template: "\n\t\t<osw-tabbar [tabs]=\"tabs\"></osw-tabbar>\n\t",
+                        template: "\n\t\t<osw-tabbar [tabs]=\"tabs\" [isTranslucent]=\"true\"></osw-tabbar>\n\t",
                         styles: [
                             styles_ts_1.OSW_STYLES
                         ]

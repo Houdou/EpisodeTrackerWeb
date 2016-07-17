@@ -11,7 +11,7 @@ import { OSW_STYLES } from '@osw/styles.ts';
 		ROUTER_DIRECTIVES
 	],
 	template: `
-		<osw-tabbar [tabs]="tabs"></osw-tabbar>
+		<osw-tabbar [tabs]="tabs" [isTranslucent]="true"></osw-tabbar>
 	`,
 	styles: [
 		OSW_STYLES
