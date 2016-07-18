@@ -25,6 +25,6 @@ export class EpiMain {
 			new Tab('flaticon-note', 'List', 'list'),
 			new Tab('flaticon-home', 'Home', 'home', true),
 			new Tab('flaticon-settings', 'Settings', 'settings')
-		]
+		];
 	}
 };
