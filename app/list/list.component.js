@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@osw/tabs/tabs', '@osw/styles.ts'], function(exports_1, context_1) {
+System.register(['@angular/core', '@osw/navigation/navigation'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,46 +10,35 @@ System.register(['@angular/core', '@osw/tabs/tabs', '@osw/styles.ts'], function(
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, tabs_1, styles_ts_1;
-    var EpiMain;
+    var core_1, navigation_1;
+    var EpiListComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (tabs_1_1) {
-                tabs_1 = tabs_1_1;
-            },
-            function (styles_ts_1_1) {
-                styles_ts_1 = styles_ts_1_1;
+            function (navigation_1_1) {
+                navigation_1 = navigation_1_1;
             }],
         execute: function() {
-            EpiMain = (function () {
-                function EpiMain() {
-                    this.tabs = [
-                        new tabs_1.Tab('flaticon-note', 'List', 'list'),
-                        new tabs_1.Tab('flaticon-home', 'Home', 'home', true),
-                        new tabs_1.Tab('flaticon-settings', 'Settings', 'settings')
-                    ];
+            EpiListComponent = (function () {
+                function EpiListComponent() {
+                    this.title = "List";
                 }
-                EpiMain = __decorate([
+                EpiListComponent = __decorate([
                     core_1.Component({
-                        selector: 'epitracker',
+                        selector: 'epi-list',
+                        template: "\n\t\t<osw-navigation [isTranslucent]=\"true\" [title]=\"title\"><osw-navigation>\n\t",
                         directives: [
-                            tabs_1.OSW_TABS_DIRECTIVES
-                        ],
-                        template: "\n\t\t<osw-tabbar [tabs]=\"tabs\" [isTranslucent]=\"true\"></osw-tabbar>\n\t",
-                        styles: [
-                            styles_ts_1.OSW_STYLES
+                            navigation_1.OSW_NAVIGATION_DIRECTIVES
                         ]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], EpiMain);
-                return EpiMain;
+                ], EpiListComponent);
+                return EpiListComponent;
             }());
-            exports_1("EpiMain", EpiMain);
-            ;
+            exports_1("EpiListComponent", EpiListComponent);
         }
     }
 });
-//# sourceMappingURL=epi.main.js.map
+//# sourceMappingURL=list.component.js.map

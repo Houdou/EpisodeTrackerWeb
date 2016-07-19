@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@osw/tabs/tabs', '@osw/styles.ts'], function(exports_1, context_1) {
+System.register(['@angular/core', '@osw/scroll/scroll'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,46 +10,34 @@ System.register(['@angular/core', '@osw/tabs/tabs', '@osw/styles.ts'], function(
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, tabs_1, styles_ts_1;
-    var EpiMain;
+    var core_1, scroll_1;
+    var EpiBangumiComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (tabs_1_1) {
-                tabs_1 = tabs_1_1;
-            },
-            function (styles_ts_1_1) {
-                styles_ts_1 = styles_ts_1_1;
+            function (scroll_1_1) {
+                scroll_1 = scroll_1_1;
             }],
         execute: function() {
-            EpiMain = (function () {
-                function EpiMain() {
-                    this.tabs = [
-                        new tabs_1.Tab('flaticon-note', 'List', 'list'),
-                        new tabs_1.Tab('flaticon-home', 'Home', 'home', true),
-                        new tabs_1.Tab('flaticon-settings', 'Settings', 'settings')
-                    ];
+            EpiBangumiComponent = (function () {
+                function EpiBangumiComponent() {
                 }
-                EpiMain = __decorate([
+                EpiBangumiComponent = __decorate([
                     core_1.Component({
-                        selector: 'epitracker',
+                        selector: 'epi-bangumi',
+                        template: "\n\t\t<osw-scroll>\n\t\t\t<template osw-scroll-view>\n\t\t\t\t<h2>Detail</h2>\n\t\t\t</template>\n\t\t</osw-scroll>\n\t",
                         directives: [
-                            tabs_1.OSW_TABS_DIRECTIVES
-                        ],
-                        template: "\n\t\t<osw-tabbar [tabs]=\"tabs\" [isTranslucent]=\"true\"></osw-tabbar>\n\t",
-                        styles: [
-                            styles_ts_1.OSW_STYLES
+                            scroll_1.OSW_SCROLL_DIRECTIVES
                         ]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], EpiMain);
-                return EpiMain;
+                ], EpiBangumiComponent);
+                return EpiBangumiComponent;
             }());
-            exports_1("EpiMain", EpiMain);
-            ;
+            exports_1("EpiBangumiComponent", EpiBangumiComponent);
         }
     }
 });
-//# sourceMappingURL=epi.main.js.map
+//# sourceMappingURL=bangumi.component.js.map
