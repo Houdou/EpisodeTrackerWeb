@@ -13,8 +13,8 @@
     'app':                        'app', // 'dist',
     '@angular2-material':         'node_modules/@angular2-material',
     '@osw':                       'node_modules/@osw',
-    'rxjs':                       'https://npmcdn.com/rxjs@5.0.0-beta.6',
-    'angular2-in-memory-web-api': 'https://npmcdn.com/angular2-in-memory-web-api' // get latest
+    'rxjs':                       'https://unpkg.com/rxjs@5.0.0-beta.6',
+    'angular2-in-memory-web-api': 'https://unpkg.com/angular2-in-memory-web-api' // get latest
   };
 
   //packages tells the System loader how to load when no filename and/or no extension
@@ -70,9 +70,9 @@
       '@angular/upgrade',
   ];
 
-  // add map entries for angular packages in the form '@angular/common': 'https://npmcdn.com/@angular/common@0.0.0-3'
+  // add map entries for angular packages in the form '@angular/common': 'https://unpkg.com/@angular/common@0.0.0-3'
   packageNames.forEach(function(pkgName) {
-    map[pkgName] = 'https://npmcdn.com/' + pkgName + ngVer;
+    map[pkgName] = 'https://unpkg.com/' + pkgName + ngVer;
   });
 
   // add package entries for angular packages in the form '@angular/common': { main: 'index.js', defaultExtension: 'js' }
@@ -80,7 +80,7 @@
     packages[pkgName] = { main: 'index.js', defaultExtension: 'js' };
   });
 
-  map['@angular/router'] = 'https://npmcdn.com/@angular/router@3.0.0-beta.2';
+  map['@angular/router'] = 'https://unpkg.com/@angular/router@3.0.0-beta.2';
   packages['@angular/router'] = { main: 'index.js', defaultExtension: 'js' };
 
   var config = {
